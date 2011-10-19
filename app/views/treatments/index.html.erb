@@ -1,0 +1,29 @@
+<h1>Listing treatments</h1>
+
+<table>
+  <tr>
+    <th>Treatment date</th>
+    <th>Treatment type</th>
+    <th>Notes</th>
+    <th>Cows</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @treatments.each do |treatment| %>
+  <tr>
+    <td><%= treatment.treatment_date %></td>
+    <td><%= treatment.treatment_type %></td>
+    <td><%= treatment.notes %></td>
+    <td>Cows</td>
+    <td><%= link_to 'Show', treatment %></td>
+    <td><%= link_to 'Edit', edit_treatment_path(treatment) %></td>
+    <td><%= link_to 'Destroy', treatment, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Treatment', new_treatment_path %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  treatment_date: 2011-10-19
+  treatment_type: MyString
+  notes: MyString
+  cow: 
+
+two:
+  treatment_date: 2011-10-19
+  treatment_type: MyString
+  notes: MyString
+  cow: 

@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @cow.name %>
+</p>
+
+<p>
+  <b>Pic number:</b>
+  <%= @cow.pic_number %>
+</p>
+
+<p>
+  <b>Farm number:</b>
+  <%= @cow.farm_number %>
+</p>
+
+<p>
+  <b>Pedigree:</b>
+  <%= @cow.pedigree %>
+</p>
+
+<p>
+  <b>Treatments:</b>
+  Treatments
+</p>
+
+<p>
+  <b>Offspring:</b>
+  <%= @cow.offspring %>
+</p>
+
+<p>
+  <b>Picture:</b>
+  <%= @cow.picture %>
+</p>
+
+<p>
+  <b>Purchase price:</b>
+  <%= @cow.purchase_price %>
+</p>
+
+<p>
+  <b>Sale price:</b>
+  <%= @cow.sale_price %>
+</p>
+
+<p>
+  <b>Calving info:</b>
+  <%= @cow.calving_info %>
+</p>
+
+<p>
+  <b>Property movements:</b>
+  <%= @cow.property_movements %>
+</p>
+
+<p>
+  <b>Miscellaneous notes:</b>
+  <%= @cow.miscellaneous_notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_cow_path(@cow) %> |
+<%= link_to 'Back', kine_path %>

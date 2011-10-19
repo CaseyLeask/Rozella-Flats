@@ -1,0 +1,71 @@
+<%= form_for(@cow) do |f| %>
+  <% if @cow.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cow.errors.count, "error") %> prohibited this cow from being saved:</h2>
+
+      <ul>
+      <% @cow.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :pic_number %><br />
+    <%= f.text_field :pic_number %>
+  </div>
+  <div class="field">
+    <%= f.label :farm_number %><br />
+    <%= f.number_field :farm_number %>
+  </div>
+  <div class="field">
+    <%= f.label :pedigree %><br />
+    <%= f.text_area :pedigree %>
+  </div>
+  <label for="oses">Treatments</label>
+  <% for treatment in Treatment.all %>
+  <div>
+  <%= check_box_tag "cow[treatment_ids][]", treatment.id,
+                    @cow.treatments.include?(treatment) %>
+  <%= treatment.treatment_date %>
+  <%= treatment.treatment_type %>
+  <%= treatment.notes %>
+</div>
+<% end %>
+  <div class="field">
+    <%= f.label :offspring %><br />
+    <%= f.text_area :offspring %>
+  </div>
+  <div class="field">
+    <%= f.label :picture %><br />
+    <%= f.text_field :picture %>
+  </div>
+  <div class="field">
+    <%= f.label :purchase_price %><br />
+    <%= f.text_field :purchase_price %>
+  </div>
+  <div class="field">
+    <%= f.label :sale_price %><br />
+    <%= f.text_field :sale_price %>
+  </div>
+  <div class="field">
+    <%= f.label :calving_info %><br />
+    <%= f.text_area :calving_info %>
+  </div>
+  <div class="field">
+    <%= f.label :property_movements %><br />
+    <%= f.text_area :property_movements %>
+  </div>
+  <div class="field">
+    <%= f.label :miscellaneous_notes %><br />
+    <%= f.text_area :miscellaneous_notes %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

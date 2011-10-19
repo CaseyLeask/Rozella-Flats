@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  pic_number: MyString
+  farm_number: 1
+  pedigree: MyText
+  treatments: MyText
+  offspring: MyText
+  picture: 
+  purchase_price: 9.99
+  sale_price: 9.99
+  calving_info: MyText
+  property_movements: MyText
+  miscellaneous_notes: MyText
+
+two:
+  name: MyString
+  pic_number: MyString
+  farm_number: 1
+  pedigree: MyText
+  treatments: MyText
+  offspring: MyText
+  picture: 
+  purchase_price: 9.99
+  sale_price: 9.99
+  calving_info: MyText
+  property_movements: MyText
+  miscellaneous_notes: MyText

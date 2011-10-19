@@ -1,0 +1,45 @@
+<h1>Listing kine</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Pic number</th>
+    <th>Farm number</th>
+    <th>Pedigree</th>
+    <th>Treatments</th>
+    <th>Offspring</th>
+    <th>Picture</th>
+    <th>Purchase price</th>
+    <th>Sale price</th>
+    <th>Calving info</th>
+    <th>Property movements</th>
+    <th>Miscellaneous notes</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @kine.each do |cow| %>
+  <tr>
+    <td><%= cow.name %></td>
+    <td><%= cow.pic_number %></td>
+    <td><%= cow.farm_number %></td>
+    <td><%= cow.pedigree %></td>
+    <td>Treatments!</td>
+    <td><%= cow.offspring %></td>
+    <td><%= cow.picture %></td>
+    <td><%= cow.purchase_price %></td>
+    <td><%= cow.sale_price %></td>
+    <td><%= cow.calving_info %></td>
+    <td><%= cow.property_movements %></td>
+    <td><%= cow.miscellaneous_notes %></td>
+    <td><%= link_to 'Show', cow %></td>
+    <td><%= link_to 'Edit', edit_cow_path(cow) %></td>
+    <td><%= link_to 'Destroy', cow, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Cow', new_cow_path %>

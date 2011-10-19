@@ -1,0 +1,33 @@
+<%= form_for(@treatment) do |f| %>
+  <% if @treatment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@treatment.errors.count, "error") %> prohibited this treatment from being saved:</h2>
+
+      <ul>
+      <% @treatment.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :treatment_date %><br />
+    <%= f.date_select :treatment_date %>
+  </div>
+  <div class="field">
+    <%= f.label :treatment_type %><br />
+    <%= f.text_field :treatment_type %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br />
+    <%= f.text_field :notes %>
+  </div>
+  <div class="field">
+    <%= f.label :cow %><br />
+    <%= f.text_field :cow %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
