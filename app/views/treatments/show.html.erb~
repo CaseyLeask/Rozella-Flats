@@ -17,7 +17,7 @@
 
 <p>
   <b>Cow:</b>
-  <%= @treatment.cow %>
+  Cow
 </p>
 
 
