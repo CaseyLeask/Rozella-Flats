@@ -25,7 +25,13 @@
   </div>
   <div class="field">
     <%= f.label :cow %><br />
-    <%= f.text_field :cow %>
+    <% for treatment in Cow.all %>
+      <%= check_box_tag "treatment[cow_ids][]", cow.id,
+                        @treatment.kine.include?(cow) %>
+      <%= cow.name %>
+      <%= cow.pic_number %>
+      <%= cow.farm_number %>
+    <% end %>
   </div>
   <div class="actions">
     <%= f.submit %>
