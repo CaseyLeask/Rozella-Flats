@@ -13,8 +13,8 @@
 
 <% @treatments.each do |treatment| %>
   <tr>
-    <td><%= treatment.treatment_date %></td>
-    <td><%= treatment.treatment_type %></td>
+    <td><%= treatment.date %></td>
+    <td><%= treatment.type %></td>
     <td><%= treatment.notes %></td>
     <td>Cows</td>
     <td><%= link_to 'Show', treatment %></td>

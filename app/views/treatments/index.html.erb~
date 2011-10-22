@@ -16,7 +16,7 @@
     <td><%= treatment.treatment_date %></td>
     <td><%= treatment.treatment_type %></td>
     <td><%= treatment.notes %></td>
-    <td><%= treatment.cow %></td>
+    <td>Cows</td>
     <td><%= link_to 'Show', treatment %></td>
     <td><%= link_to 'Edit', edit_treatment_path(treatment) %></td>
     <td><%= link_to 'Destroy', treatment, confirm: 'Are you sure?', method: :delete %></td>
