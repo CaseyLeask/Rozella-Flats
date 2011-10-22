@@ -11,12 +11,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111022110604) do
+ActiveRecord::Schema.define(:version => 20111022114138) do
 
   create_table "kine", :force => true do |t|
     t.string   "name"
     t.string   "nlis"
-    t.integer  "farm_number"
+    t.string   "farm_number"
     t.text     "pedigree"
     t.text     "offspring"
     t.binary   "picture"
