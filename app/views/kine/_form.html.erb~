@@ -32,7 +32,9 @@
   <div>
   <%= check_box_tag "cow[treatment_ids][]", treatment.id,
                     @cow.treatments.include?(treatment) %>
-  <%= category.name %>
+  <%= treatment.treatment_date %>
+  <%= treatment.treatment_type %>
+  <%= treatment.notes %>
 </div>
 <% end %>
   <div class="field">

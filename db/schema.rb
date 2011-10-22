@@ -11,11 +11,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111019074227) do
+ActiveRecord::Schema.define(:version => 20111022110604) do
 
   create_table "kine", :force => true do |t|
     t.string   "name"
-    t.string   "pic_number"
+    t.string   "nlis"
     t.integer  "farm_number"
     t.text     "pedigree"
     t.text     "offspring"
@@ -35,8 +35,8 @@ ActiveRecord::Schema.define(:version => 20111019074227) do
   end
 
   create_table "treatments", :force => true do |t|
-    t.date     "treatment_date"
-    t.string   "treatment_type"
+    t.date     "date"
+    t.string   "type"
     t.string   "notes"
     t.integer  "cow_id"
     t.datetime "created_at"

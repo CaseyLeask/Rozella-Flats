@@ -22,7 +22,7 @@
 
 <p>
   <b>Treatments:</b>
-  <%= @cow.treatments %>
+  Treatments
 </p>
 
 <p>

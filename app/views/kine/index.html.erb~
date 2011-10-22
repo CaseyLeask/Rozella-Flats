@@ -25,7 +25,7 @@
     <td><%= cow.pic_number %></td>
     <td><%= cow.farm_number %></td>
     <td><%= cow.pedigree %></td>
-    <td><%= cow.treatments %></td>
+    <td>Treatments!</td>
     <td><%= cow.offspring %></td>
     <td><%= cow.picture %></td>
     <td><%= cow.purchase_price %></td>

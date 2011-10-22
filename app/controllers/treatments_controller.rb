@@ -56,7 +56,7 @@ class TreatmentsController < ApplicationController
   # PUT /treatments/1
   # PUT /treatments/1.json
   def update
-    params[:cow][:treatment_ids] ||= []
+    params[:treatment][:cow_ids] ||= []
     @treatment = Treatment.find(params[:id])
 
     respond_to do |format|
