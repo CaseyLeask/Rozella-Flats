@@ -2,7 +2,7 @@ RozellaFlats::Application.routes.draw do
   resources :treatments
   resources :kine
 
-  match '/cows' => redirect('/kine')
+  get '/cows' => redirect('/kine')
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

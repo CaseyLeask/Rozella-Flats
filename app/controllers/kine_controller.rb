@@ -2,7 +2,7 @@ class KineController < ApplicationController
   # GET /kine
   # GET /kine.json
   def index
-    @kine = Cow.all
+    @kine = Kine.all
 
     respond_to do |format|
       format.html # index.html.erb
